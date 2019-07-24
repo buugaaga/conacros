@@ -1,4 +1,4 @@
-import "./sass/main.scss";
+import "./sass/main.sass";
 
 console.log("hi");
 alert("hello");

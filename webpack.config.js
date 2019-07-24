@@ -18,10 +18,10 @@ module.exports = {
         options: {
           presets: ['@babel/preset-env']
         }
-      }
-    }],
-    rules: [{
-      test: /\.scss$/,
+      },
+    },
+    {
+      test: /\.sass$/,
       use: [
         MiniCssExtractPlugin.loader,
         "css-loader",
@@ -40,11 +40,23 @@ module.exports = {
         },
         "sass-loader"
       ]
+    },
+    {
+      test: /\.(png|jpe?g|gif)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'images',
+            name: '[path][name].[ext]'
+          },
+        },
+      ]
     }]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "public/stylesheets/main.css"
+      filename: "stylesheets/main.css"
     })
   ]
 }
