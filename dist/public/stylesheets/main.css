@@ -1,9 +1,12 @@
 .one {
   overflow: hidden;
-  height: 200px;
-  background-color: green; }
+  min-height: 100vh;
+  background-size: cover; }
 
 body {
   padding: 0;
   margin: 0; }
+
+.grid {
+  display: grid; }
 

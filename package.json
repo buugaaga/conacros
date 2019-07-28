@@ -10,7 +10,7 @@
     "start": "node server.js",
     "test": "node test.js",
     "live": "nodemon server.js",
-    "dev": "webpack"
+    "dev": "webpack -w"
   },
   "dependencies": {
     "cool-ascii-faces": "^1.3.4",
