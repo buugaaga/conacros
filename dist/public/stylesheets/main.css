@@ -5,7 +5,8 @@ body {
   color: #555; }
 
 .grid {
-  display: grid; }
+  display: grid; 
+}
 
 .one {
   overflow: hidden;
