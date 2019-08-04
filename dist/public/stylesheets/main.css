@@ -4,14 +4,23 @@ body {
   font-family: sans-serif;
   color: #555; }
 
+a {
+  text-decoration: none;
+  color: lightblue; }
+  a:hover {
+    color: white; }
+
+ul {
+  list-style: none; }
+
 .grid {
   display: grid; 
 }
 
 .one {
-  overflow: hidden;
   min-height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 80px; }
   .one .nav {
     max-height: 20vh; }
     .one .nav h2 {
@@ -30,10 +39,71 @@ body {
           font-weight: 600;
           line-height: 36px; }
           .one .nav ul li a:hover {
-            color: gray; }
-  .one .offer {
-    max-height: 70vh; }
-    .one .offer h1 {
-      color: #111;
-      font-size: 80px; }
+            color: white; }
+  .one .offer h1 {
+    color: #111;
+    font-size: 80px;
+    padding: 30px; }
+  .one .offer p {
+    color: #f33;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px; }
+
+.footer {
+  grid-template-columns: repeat(4, 1fr);
+  height: 200px;
+  background-color: #111; }
+  .footer .contact {
+    grid-column: 1 / 2;
+    padding: 30px; }
+  .footer .time {
+    grid-column: 2 / 3;
+    padding: 30px; }
+  .footer .tel {
+    grid-column: 3 / 4;
+    padding: 30px; }
+  .footer .adres {
+    grid-column: 4 / 5;
+    padding: 30px; }
+
+.header {
+  min-height: 30vh;
+  background-size: cover;
+  background-position: 0 60%; }
+  .header h1 {
+    padding: 30px 90px;
+    font-size: 50px;
+    color: teal; }
+
+.nav-template {
+  min-height: 50px; }
+  .nav-template div {
+    position: relative; }
+  .nav-template div:nth-child(n) {
+    padding-left: 30px; }
+    .nav-template div:nth-child(n) ul {
+      position: absolute;
+      display: none;
+      top: 30px;
+      left: 0;
+      background-color: grey;
+      -webkit-padding-start: 10px;
+              padding-inline-start: 10px;
+      -webkit-padding-end: 10px;
+              padding-inline-end: 10px; }
+      .nav-template div:nth-child(n) ul li {
+        padding: 10px 0; }
+  .nav-template .home {
+    grid-column: 1 / 2; }
+    .nav-template .home h3 {
+      z-index: 1; }
+  .nav-template .catalog {
+    grid-column: 2/3; }
+  .nav-template .about {
+    grid-column: 3/4; }
+  .nav-template .projects {
+    grid-column: 4/5; }
+  .nav-template .contacts {
+    grid-column: 5/6; }
 

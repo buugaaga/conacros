@@ -1,11 +1,10 @@
 
 
 .one 
-  overflow: hidden
+ 
   min-height: 100vh
   background-size: cover
-
-
+  background-position: 0 80px
   .nav 
     max-height: 20vh
     h2 
@@ -23,13 +22,36 @@
           font-weight: 600
           line-height: 36px
           &:hover
-            color: gray
+            color: white
          
   .offer
-    max-height: 70vh
+    
     h1 
       color: #111
       font-size: 80px
+      padding: 30px
+    p 
+      color: #f33
+      font-size: 30px
+      font-weight: 600
+      padding: 30px
 
+.footer 
+  grid-template-columns: repeat(4, 1fr)
+  height: 200px
+  background-color: #111
+  .contact
+    grid-column: 1 / 2
+    padding: 30px
+  .time
+    grid-column: 2 / 3
+    padding: 30px
+  .tel
+    grid-column: 3 / 4
+    padding: 30px
+  .adres
+    grid-column: 4 / 5
+    padding: 30px
   
+    
   
