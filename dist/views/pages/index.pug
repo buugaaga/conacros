@@ -1,27 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-  include ../partials/header.pug
-</head>
+
+include ../partials/header.pug
 
 <body>
   
-  header(class="one grid" style="background-image: url(actives/productin.jpg")
+  header(class="one grid" style="background-image: url(actives/productin.jpg)")
     div(class="nav grid")
       h2 CONACROS
 
       ul(class="grid")
         li 
-          a(href="#")            Наша продукция
+          a(href="products")            Наша продукция
         li 
-          a(href="#")            О компании
+          a(href="about")            О компании
         li 
-          a(href="#")            Контакты
+          a(href="contacts")            Контакты
 
-    div(class="offer grid")
+    div(class="offer")
       h1 ФИЛЬТРЫ
       p поставка и подбор качественных фильтров по выгодным ценам
-  
+
+    
+  footer(class="footer grid")
+    div(class="contact") 
+      h3 Контактная информация
+    div(class="time") 
+      h3 Время работы
+      p По будням 7:00 - 17:00
+    div(class="tel")
+      h3 Телефоны
+      p +7 965 509 61 63
+    div(class="adres")
+      h3 Адрес
+      p Город Новоуральск ул. Советская 2
+
   script(src="main.js")
 </body>
 </html>

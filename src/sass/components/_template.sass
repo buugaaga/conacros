@@ -1,0 +1,40 @@
+.header 
+  min-height: 30vh
+  background-size: cover
+  background-position: 0 60%
+  h1 
+    padding: 30px 90px
+    font-size: 50px
+    color: teal
+.nav-template
+  min-height: 50px
+  div
+    position: relative
+  & div:nth-child(n)
+    padding-left: 30px
+    ul 
+      position: absolute
+      display: none
+      top: 30px
+      left: 0
+      background-color: grey
+      padding-inline-start: 10px
+      padding-inline-end: 10px
+      li
+        padding: 10px 0
+        a 
+          
+  .home 
+    grid-column: 1 / 2
+    h3 
+      z-index: 1
+  .catalog
+    grid-column: 2/3
+  .about
+    grid-column: 3/4
+  .projects
+    grid-column: 4/5
+  .contacts
+    grid-column: 5/6
+
+  

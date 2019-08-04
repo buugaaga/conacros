@@ -11,7 +11,10 @@ app.use(express.static(path.join(__dirname, 'dist', 'public')))
 // обрабатываем страницы, используя шаблонизатор pug
 app.set('views', path.join(__dirname, 'dist', 'views'))
 app.set('view engine', 'pug')
-app.get('/', (req, res) => res.render('pages'))
+app.get('/contacts', (req, res) => res.render('pages/contacts'))
+app.get('/products', (req, res) => res.render('pages/products'))
+app.get('/about', (req, res) => res.render('pages/about'))
+app.get('/', (req, res) => res.render('pages/index'))
 // прослушиваем порт
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 

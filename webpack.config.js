@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const autoprefixer = require('autoprefixer')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 module.exports = {
   entry: './src/index.js',
@@ -57,6 +57,10 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "stylesheets/main.css"
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ]
 }
